@@ -15,14 +15,14 @@ function Hero1(props) {
             x1="101%"
             y1="5%"
             x2="-1%"
-            y2="76%"
+            y2="86%"
           ></line>
           <line
             className="line-primary line-1"
             x1="101%"
-            y1="45%"
+            y1="49%"
             x2="-1%"
-            y2="77%"
+            y2="87%"
           ></line>
         </svg>
         <svg className={styles.line_single} height="80%" width="100vw">
@@ -31,7 +31,7 @@ function Hero1(props) {
             x1="101%"
             y1="92%"
             x2="-1%"
-            y2="48%"
+            y2="56%"
           ></line>
         </svg>
         <div className={styles.title_group}>
@@ -40,30 +40,20 @@ function Hero1(props) {
         </div>
         <p>{props.hero.description}</p>
         <a className="link" href="#tiles">
-          <div className="arrows_group">
-            <svg width="110" height="6">
-              <line
-                className="line-primary line-3"
-                x1="100%"
-                y1="0"
-                x2="0"
-                y2="0"
-              />
-            </svg>
+          <div className={`arrows_group ${styles.arrow_down_big}`}>
             <svg
-              aria-hidden="true"
-              focusable="false"
-              data-prefix="fas"
-              data-icon="arrow-down"
-              className="svg-inline--fa fa-arrow-down fa-w-14"
-              role="img"
+              width="125"
+              height="46"
+              viewBox="0 0 125 46"
+              fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
             >
+              <path d="M0 3H106.86V40.7655" stroke="#F54E52" strokeWidth="6" />
               <path
-                fill="currentColor"
-                d="M413.1 222.5l22.2 22.2c9.4 9.4 9.4 24.6 0 33.9L241 473c-9.4 9.4-24.6 9.4-33.9 0L12.7 278.6c-9.4-9.4-9.4-24.6 0-33.9l22.2-22.2c9.5-9.5 25-9.3 34.3.4L184 343.4V56c0-13.3 10.7-24 24-24h32c13.3 0 24 10.7 24 24v287.4l114.8-120.5c9.3-9.8 24.8-10 34.3-.4z"
-              ></path>
+                d="M122.5 24.2656L107 41.2656L90.5 24.2656"
+                stroke="#F54E52"
+                strokeWidth="6"
+              />
             </svg>
           </div>
         </a>

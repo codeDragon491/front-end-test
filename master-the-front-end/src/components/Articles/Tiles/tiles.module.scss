@@ -11,6 +11,7 @@
 @media only screen and (max-width: 1023px) and (orientation: landscape) {
     .article {
         grid-template-columns: repeat(2, 1fr);
+        margin: 0 1.5em 1.5em;
     }
 }
 
@@ -34,6 +35,6 @@
 @media only screen and (min-width: 1280px) {
     .article {
         grid-template-columns: repeat(3, 1fr);
-        margin: 1.5em 3.5em;
+        margin: 0 1.5em 3.5em;
     }
 }

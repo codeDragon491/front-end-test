@@ -1,3 +1,4 @@
+@import '../../../assets/styles/includes/_vars.scss';
 .article_wrapper {
     position: relative;
 }
@@ -7,7 +8,7 @@
     display: grid;
     grid-gap: 1.5em;
     grid-template-rows: max-content max-content max-content;
-    padding: 1.5em;
+    padding: 1.5em 1.5em 0;
     h1 {
         max-width: 9ch;
         line-height: 1;
@@ -32,17 +33,18 @@
 
 .article_2 {
     justify-content: center;
+    padding-bottom: 1.5em;
     h1 {
         max-width: max-content;
     }
     h2 {
         position: relative;
-        font-size: 6vw;
-        max-width: 14ch;
+        font-size: 7vw;
+        max-width: 18ch;
         text-transform: uppercase;
         font-family: "Articulat CF Extra Bold";
         font-style: italic;
-        margin: 1.25em 0 0 0;
+        margin: 0.25em 0 0;
         z-index: 30;
     }
     p {
@@ -56,9 +58,8 @@
 .title_link_group {
     max-width: fit-content;
     span {
-        position: absolute;
-        left: 63%;
-        top: 35%;
+        display: inline-block;
+        vertical-align: middle;
     }
 }
 
@@ -83,14 +84,22 @@
     z-index: 20;
 }
 
+.arrow_right_big,
+.arrow_down_big {
+    width: $fa-arrow-big_size;
+}
+
+.arrow_right_big {
+    margin-left: 0.5em;
+}
+
 // Mobile in Landscape Mode
 @media only screen and (max-width: 1023px) and (orientation: landscape) {
     .article_1,
     .article_2 {
-        padding: 1.5em 2.5em;
+        padding: 3.5em 2.5em 0;
         grid-template-columns: auto auto;
         grid-template-rows: max-content max-content;
-        padding-top: 3.5em;
         //hero1 styles
         h1 {
             font-size: 8vw;
@@ -104,7 +113,7 @@
             grid-column: 2;
         }
         h2 {
-            font-size: 5vw;
+            font-size: 4vw;
         }
         // hero2 styles
         .title_link_group {
@@ -112,6 +121,7 @@
         }
     }
     .article_2 {
+        padding-bottom: 2.5em;
         p {
             font-size: 2vw;
         }
@@ -122,20 +132,21 @@
 @media only screen and (min-width: 768px) and (orientation: portrait) {
     .article_1,
     .article_2 {
-        padding: 1.5em 2.5em;
+        padding: 1.5em 2.5em 0;
         h1 {
             font-size: 10vw;
             margin-top: 0.75em;
         }
         p {
-            font-size: 3vw;
-            max-width: 45ch;
+            font-size: 2.25vw;
+            max-width: 46ch;
         }
         h2 {
             font-size: 4vw;
         }
     }
     .article_2 {
+        padding-bottom: 1.5em;
         p {
             max-width: 41ch;
             font-size: 1.75vw;
@@ -150,19 +161,21 @@
 @media only screen and (min-width: 1024px) and (orientation: landscape) {
     .article_1,
     .article_2 {
-        padding: 1.5em 3.5em;
+        padding: 1.5em 3.5em 0;
         h1 {
-            font-size: 8vw;
+            font-size: 10vw;
+            margin-top: 0.75em;
         }
         p {
-            font-size: 1.75vw;
-            max-width: 45ch;
+            font-size: 2.25vw;
+            max-width: 46ch;
         }
         h2 {
             font-size: 3vw;
         }
     }
     .article_2 {
+        padding-bottom: 1.5em;
         h1 {
             font-size: 12vw;
         }
@@ -171,15 +184,13 @@
             max-width: 50ch;
         }
     }
-    .line_group,
-    .line_single {
-        display: block;
-    }
 }
 
 // Tablet Pro
 @media only screen and (min-width: 1024px) and (orientation: portrait) {
-    .article_1,
+    .article_1 {
+        padding: 1.5em 3.5em 0;
+    }
     .article_2 {
         padding: 1.5em 3.5em;
     }
@@ -188,12 +199,17 @@
 // Laptop
 @media only screen and (min-width: 1280px) {
     .article_1 {
-        padding: 3.5em 7em;
+        padding: 3.5em 7em 0;
+        h1 {
+            font-size: 8vw;
+            margin-top: 0.5em;
+        }
+        p {
+            font-size: 1.75vw;
+        }
     }
     .article_2 {
         padding: 5em 7em;
-    }
-    .article_2 {
         h1 {
             font-size: 10vw;
         }
@@ -204,5 +220,9 @@
             font-size: 1.2vw;
             max-width: 52ch;
         }
+    }
+    .line_group,
+    .line_single {
+        display: block;
     }
 }

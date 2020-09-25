@@ -41,23 +41,7 @@
     .link {
         max-width: fit-content;
         .arrows_group {
-            position: relative;
-            display: flex;
-            margin: 1em 1em 1em 0;
-            color: $primary-color;
-            .svg-inline--fa.fa-arrow-down {
-                position: absolute;
-                left: calc(110px - (#{$fa-arrow-down_size} / 2+3.5px));
-                width: $fa-arrow-down_size;
-                height: calc(25px + 2vmin);
-            }
-            .svg-inline--fa.fa-arrow-right {
-                position: absolute;
-                top: #{$fa-arrow-right_negative-size};
-                left: 50px;
-                width: #{$fa-arrow-right_size};
-                height: #{$fa-arrow-right_size};
-            }
+            display: inline-flex;
         }
     }
 }

@@ -22,9 +22,9 @@ function Hero2(props) {
           <line
             className="line-secondary line-1"
             x1="101%"
-            y1="40%"
+            y1="47%"
             x2="-1%"
-            y2="80%"
+            y2="87%"
           ></line>
         </svg>
         <svg className={styles.line_single} height="85%" width="100vw">
@@ -33,7 +33,7 @@ function Hero2(props) {
             x1="101%"
             y1="85%"
             x2="-1%"
-            y2="31%"
+            y2="40%"
           ></line>
         </svg>
         <div className={styles.title_group}>
@@ -46,30 +46,24 @@ function Hero2(props) {
             <span>
               {" "}
               <a className="link" href="#">
-                <div className="arrows_group">
-                  <svg width="55" height="5">
-                    <line
-                      className="line-primary line-3"
-                      x1="100%"
-                      y1="0"
-                      x2="0"
-                      y2="0"
-                    />
-                  </svg>
+                <div className={`arrows_group ${styles.arrow_right_big}`}>
                   <svg
-                    aria-hidden="true"
-                    focusable="false"
-                    data-prefix="fas"
-                    data-icon="arrow-right"
-                    className="svg-inline--fa fa-arrow-right fa-w-14"
-                    role="img"
+                    width="121"
+                    height="38"
+                    viewBox="0 0 121 38"
+                    fill="none"
                     xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 448 512"
                   >
                     <path
-                      fill="currentColor"
-                      d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"
-                    ></path>
+                      d="M0 18.7668H114.86"
+                      stroke="#F54E52"
+                      strokeWidth="7"
+                    />
+                    <path
+                      d="M98 3.03247L115 18.5325L98 35.0325"
+                      stroke="#F54E52"
+                      strokeWidth="7"
+                    />
                   </svg>
                 </div>
               </a>
