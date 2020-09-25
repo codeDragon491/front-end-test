@@ -39,7 +39,7 @@ function Hero1(props) {
           <h1 dangerouslySetInnerHTML={{ __html: titleClone }}></h1>
         </div>
         <p>{props.hero.description}</p>
-        <a className="link" href="#tiles">
+        <a className="link down" href="#tiles">
           <div className={`arrows_group ${styles.arrow_down_big}`}>
             <svg
               width="125"

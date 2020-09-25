@@ -1,4 +1,5 @@
 @import '../../../assets/styles/includes/_vars.scss';
+@import '../../../assets/styles/includes/_animations.scss';
 .article_wrapper {
     position: relative;
 }
@@ -81,7 +82,18 @@
 }
 
 .line_group {
+    visibility: hidden;
     z-index: 20;
+    & :local {
+        animation: appearIn 1s ease forwards;
+    }
+}
+
+.line_single {
+    visibility: hidden;
+    & :local {
+        animation: appearIn 2s ease 1s forwards;
+    }
 }
 
 .arrow_right_big,

@@ -1,5 +1,6 @@
-@import '/assets/styles/includes/_vars.scss';
-@import '/assets/styles/includes/_colors.scss';
+@import "/assets/styles/includes/_vars.scss";
+@import "/assets/styles/includes/_colors.scss";
+@import "/assets/styles/includes/_animations.scss";
 @font-face {
     font-family: 'Articulat CF v2 Demi Bold';
     src: url('./assets/fonts/ArticulatCFv2-DemiBold.ttf');
@@ -39,9 +40,17 @@
         stroke-width: 100%;
     }
     .link {
+        display: inline-block;
         max-width: fit-content;
+        transition: transform 0.3s ease-out;
         .arrows_group {
             display: inline-flex;
         }
+    }
+    .link:hover:not(.down) {
+        transform: translateX(5px);
+    }
+    .link.down:hover {
+        transform: translateY(5px);
     }
 }
